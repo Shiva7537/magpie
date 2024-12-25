@@ -1,0 +1,693 @@
+/* nOte- width 100% is 1519px */
+
+/* line 3 to line81 is for all pages or body to .social icons */
+/* Apply Poppins to the entire body */
+
+* {
+    background-color: linear-gradient(135deg, #d7e7eb, #f0f4f8);
+    ;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* You can use different font weights for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    /* Bold headings */
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    /* Regular body text */
+}
+
+
+
+
+.navbar {
+    background-color: #343a40;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    margin-right: 20px;
+    margin-left: 20px;
+    color: #f0c040;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #f7a519;
+}
+
+.navbar-brand span {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.navbar-nav {
+    flex: 1;
+    justify-content: right;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: #f0c040;
+}
+
+.nav-link:hover {
+    color: #f7a519;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #343a40;
+    color: #f0c040;
+    padding: 50px 0;
+    animation: fadeIn 1s ease-out;
+
+}
+
+footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+
+footer a {
+    color: #f0c040;
+    transition: color 0.3s ease;
+}
+
+
+footer a:hover {
+    color: #f7a519;
+    text-decoration: underline;
+}
+
+
+.footer-links {
+    list-style: none;
+    padding: 5px;
+}
+
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+
+
+.social-icons i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #f0c040;
+    transition: color 0.3s ease, transform 0.3s ease
+}
+
+.social-icons i:hover {
+    color: #f7a519;
+    transform: translateY(-3px);
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* line 83 to line 220 is only for home page or .slider container to .homecontent2*/
+/* Container Styling */
+/* Styling the carousel container */
+#backgroundSlider {
+    margin: 30px;
+    /* Adds margin from all sides */
+}
+
+/* Styling the carousel items */
+
+.carousel-inner {
+    border: 0px;
+    border-radius: 15px;
+}
+
+.carousel-item {
+    height: calc(80vh - 60px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: transform 1s ease-in-out;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.708);
+    padding: 20px;
+    /* border-radius: 50%; */
+}
+
+.homecontent1 {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.homeh1 {
+    font-size: 60px;
+    color: #2f2f2f;
+    letter-spacing: 1px;
+    animation: fadeIn 2s ease-out;
+}
+
+.homep1 {
+    font-size: 1.2rem;
+    color: #555;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+
+.card-img-top {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+.card {
+    border: 0px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Slight zoom on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.homecontent2 {
+    padding-right: 106px;
+    padding-left: 106px;
+    padding-top: 30px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .homeh1 {
+        font-size: 60px;
+    }
+
+    .homecontent2 {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .card-img-top {
+        height: 350px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-brand span {
+        font-size: 1.1rem;
+    }
+
+    .homeh1 {
+        font-size: 50px;
+    }
+
+    .homecontent2 {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .card-img-top {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand span {
+        font-size: 1rem;
+    }
+
+    .homeh1 {
+        font-size: 40px;
+    }
+
+    .homecontent2 {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .card-img-top {
+        height: 250px;
+    }
+
+    .carousel-item {
+        height: calc(60vh - 50px);
+    }
+
+    #backgroundSlider {
+        margin: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .navbar-brand {
+        margin-left: -10px;
+    }
+
+    .navbar-brand span {
+        font-size: 0.9rem;
+    }
+
+    .homeh1 {
+        font-size: 30px;
+    }
+
+    .homecontent2 {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .card {
+        margin-bottom: 10px;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+
+    .carousel-item {
+        height: calc(50vh - 40px);
+    }
+
+    #backgroundSlider {
+        margin: 10px;
+    }
+}
+
+
+
+
+/* This is the css for about us page  from line 197 to line 254 or .content to .text light*/
+
+.content {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+
+.pic1 img {
+    height: 650px;
+    width: 540px;
+    float: right;
+}
+
+.aboutus {
+    height: 100vh;
+    width: 705px;
+    margin-left: 40px;
+}
+
+
+.abp1 {
+    text-align: justify;
+    padding-top: 10px;
+    font-size: 1rem;
+}
+
+.pic2 {
+    height: 279px;
+    width: 695px;
+}
+
+.pic3 img {
+    height: 279px;
+    width: 695px;
+}
+
+@keyframes fadeInZoom {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+img {
+    animation: fadeInZoom 1.5s ease-out forwards;
+    opacity: 0;
+}
+
+
+.about2 {
+    margin-left: 42px;
+    margin-top: 100px;
+    margin-bottom: -20px;
+}
+
+.abh2 {
+    margin-top: -100px;
+}
+
+.about3 {
+    margin-left: 42px;
+    margin-top: 70px;
+}
+
+.slogan {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.text-light {
+    margin-right: 7px;
+}
+
+@media (max-width: 1200px) {
+    .content {
+        margin: 30px;
+    }
+
+    .pic1 img {
+        height: 500px;
+        width: 400px;
+    }
+
+    .aboutus,
+    .about2,
+    .about3 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .about2 {
+        margin-top: -600px;
+    }
+
+    .pic2 {
+        height: 200px;
+        width: 100%;
+    }
+
+    .abp1 {
+        font-size: 0.9rem;
+    }
+}
+
+/* For screens smaller than 992px */
+@media (max-width: 992px) {
+    .pic1 img {
+        height: 400px;
+        width: 100%;
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .aboutus {
+        text-align: center;
+    }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    .content {
+        margin: 20px;
+    }
+
+    .pic1 img {
+        height: 350px;
+        width: 100%;
+    }
+
+    .aboutus {
+        width: 100%;
+    }
+
+    .about3 {
+        margin-top: 30px;
+    }
+
+    .pic2 {
+        height: 280px;
+        width: 550px;
+    }
+}
+
+/* For screens smaller than 576px */
+@media (max-width: 576px) {
+    .content {
+        margin: 10px;
+    }
+
+    .pic1 img {
+        height: 300px;
+        width: 350px;
+    }
+
+    .aboutus,
+    .about2,
+    .about3 {
+        width: 100%;
+    }
+
+    .abp1 {
+        font-size: 0.8rem;
+    }
+
+    .pic2 {
+        height: 250px;
+        width: 350px;
+    }
+
+    .about2 {
+        margin-top: -10px;
+    }
+}
+
+/* the code below is for only features page that is from element .featcontent to mediaquery< .slider-wrapper */
+
+.container img {
+    border: 0px;
+    border-radius: 15px;
+}
+
+
+.featcontent {
+    padding-top: 40px;
+}
+
+.feath1 {
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.lead {
+    margin-top: -5px;
+    letter-spacing: 0.08em;
+}
+
+.imgcontent {
+    text-align: justify;
+}
+
+
+
+.nextcon1 {
+    text-align: justify;
+}
+
+
+.slider-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1350px;
+    margin: auto;
+    position: relative;
+    margin-top: -30px;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 27px;
+}
+
+.slider-wrapper img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border: 0px;
+    border-radius: 15px;
+}
+
+.slider-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.slider-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.acc2 {
+    margin-top: -50px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+.nextcon2 {
+    margin-top: 40px;
+}
+
+.dinimg img {
+    width: 300px;
+    height: 300px;
+    margin-right: 64px;
+    margin-left: 64px;
+    display: inline;
+}
+
+.dinimg {
+    transform: scale(1.05);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-header {
+    background: url('image/frontviewofhotel.jpg') no-repeat center center;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    padding: 100px 0;
+    text-align: center;
+    z-index: 2000;
+}
+
+
+.contact-header h1 {
+    font-size: 3rem;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.contact-info {
+    background-color: #343a40;
+    color: white;
+    padding: 50px 20px;
+}
+
+.contact-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-form,
+    .contact-info {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magpie Mountain Village</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="image/logo.png" alt="Logo" width="50" height="50">
+                <span>Magpie Mountain Village</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="features.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Feature Section -->
+    <div class="featcontent container">
+        <div class="mb-4">
+            <div class="feath1">EXCLUSIVES</div>
+            <p class="lead">Our Unique Offerings</p>
+        </div>
+
+        <!-- Content Section 1 -->
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6">
+                <img src="image/pic3.png" alt="Nature Immersion" class="img-fluid">
+            </div>
+            <div class="col-lg-6 imgcontent">
+                <h4>Nature Immersion</h4>
+                <p>Immerse yourself in the sounds and sights of nature with our guided forest walks, birdwatching tours,
+                    and stargazing experiences. Connect with the environment and rejuvenate your senses amidst the
+                    pristine surroundings.</p>
+            </div>
+        </div>
+
+        <!-- Content Section 2 -->
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6 order-lg-2">
+                <img src="image/pic4.png" alt="Wellness Retreat" class="img-fluid">
+            </div>
+            <div class="col-lg-6 imgcontent">
+                <h4>Wellness Retreat</h4>
+                <p>Unwind and rejuvenate at our wellness center offering yoga classes, meditation sessions, and spa
+                    treatments. Pamper yourself while embracing a holistic approach to well-being in a tranquil and
+                    natural setting.</p>
+            </div>
+        </div>
+
+        <!-- Content Section 3 -->
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6">
+                <img src="image/pic5.png" alt="Farm to Table Dining" class="img-fluid">
+            </div>
+            <div class="col-lg-6 imgcontent">
+                <h4>Farm to Table Dining</h4>
+                <p>Indulge in flavourful and robust delights prepared with locally sourced, organic ingredients. Our
+                    farm-to-table restaurant offers a culinary journey that celebrates the flavours of Uttarakhand, and
+                    supports the local economy.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Accommodation Section -->
+    <div class="nextcon1 container">
+        <h2>Accommodation</h2>
+        <p class="acc1">Magpie offers an interesting choice of accommodations that includes cottages and tents, so your
+            stay can be easily customised. Our cottages are very spacious that can easily accommodate your family, with
+            ample space for your kids to hop around the floor. These cottage rooms offer King-size beds with ample
+            natural light, and have attached bathrooms. Room amenities include a selected supplies of tea / coffee sets,
+            water bottles, bath & skin products and personal items set in tastefully furnished spaces. (Extra bed
+            available at nominal charges).</p>
+
+        <p class="acc1">
+        Our Tents are the most popular stay options. These tents are quite durable and offer a
+        countryside wandering experience that is complemented by comfortable on-the floor mattresses, uninterrupted
+        power & light, charging ports, easily accessible washrooms and breathtaking views of neighbouring mountains.
+        Some of our customers first stay in cottages and then move to the tents to complete the experience. (Folding
+        beds are available upon request at nominal charges).
+        </p>
+        <div class="container my-5">
+            <div class="slider-container">
+                <div class="slider-wrapper" id="slider">
+                    <img class="slim1" src="image/roomview.jpg" alt="Image 1">
+                    <img class="slim2" src="image/rooms of magpie mountain village.jpg" alt="Image 2">
+                    <img class="slim3" src="image/Room of magpie mountain village.jpg" alt="Image 3">
+                    <img class="slim4" src="image/hotel room photo .jpg" alt="Image 4">
+                    <img class="slim5" src="image/Camping near hotel.jpg" alt="Image 5">
+                    <img class="slim1" src="image/roomview.jpg" alt="Image 1"> <!-- Repeat for looping effect -->
+                    <img class="slim2" src="image/rooms of magpie mountain village.jpg" alt="Image 2">
+                    <!-- Repeat for looping effect -->
+                </div>
+                <button class="slider-button prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="slider-button next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+
+            <div class="slider-navigation" id="slider-navigation">
+                <span class="dot" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+                <span class="dot" onclick="goToSlide(3)"></span>
+                <span class="dot" onclick="goToSlide(4)"></span>
+            </div>
+        </div>
+
+
+
+        <p class="acc2">All our guests are offered a welcome drink on arrival. Breakfast is a part of the package as an
+            option. Assortment of packaged snacks and non-alcoholic beverages are available 24 hours on chargeable
+            basis.</p>
+
+
+        <div class="nextcon2">
+            <div class="dincontent">
+                <h2>Dining</h2>
+                <p>Our Food concept has evolved from the idea of sustainability in consumption. Most of our food, dairy
+                    products and ingredients are sourced locally. A variety of local organic fresh produce is used in
+                    our preparations. Our cooks bring together elements of local mountain cuisine of Uttarakhand,
+                    seasonal produce and their creativity to craft a rustic yet unique culinary experience. </p>
+            </div>
+            <div class="dinimg">
+                <img class="dinimg1" src="image/Dining area for guest of hotel in nainital.jpg"
+                    alt="Magpie Dining hall image">
+                <img class="dinimg2" src="image/diningview2.jpg" alt="Magpie Dining hall image">
+                <img class="dinimg3" src="image/diningviewoutside.jpg" alt="Magpie Dining hall image">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer text-center text-lg-start mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Quick Links -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Social Icons -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase">Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" class="text-light"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <!-- Footer Contact Info -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-envelope-fill"></i> info@magpie.com</li>
+                        <li><i class="bi bi-phone-fill"></i> +123 456 7890</li>
+                        <li><i class="bi bi-geo-alt-fill"></i> to be filled</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Copyright -->
+        <div class="text-center py-3">
+            <small>© 2024 Magpie Mountain Village. All Rights Reserved.</small>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+    <script>
+        let currentIndex = 0; // Current slide index for the first slider
+        const totalImages = 5; // Total unique images for the first slider
+        const images = document.querySelectorAll('.slider-wrapper img'); // Get all images in the first slider
+        const dots = document.querySelectorAll('.dot'); // Get all dots for navigation
+
+        function moveSlide(direction) {
+            currentIndex += direction;
+
+            if (currentIndex >= totalImages) {
+                currentIndex = 0; // Go back to first image
+            } else if (currentIndex < 0) {
+                currentIndex = totalImages - 1; // Go to last unique image
+            }
+
+            updateSlider();
+        }
+
+        function goToSlide(index) {
+            currentIndex = index;
+            updateSlider();
+        }
+
+        function updateSlider() {
+            const offset = -(currentIndex * (400 + 20)); // 400px width + 20px gap
+            document.querySelector('.slider-wrapper').style.transform = `translateX(${offset}px)`;
+
+            dots.forEach((dot, index) => {
+                dot.classList.remove('active');
+                if (index === currentIndex) {
+                    dot.classList.add('active');
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
